@@ -1,0 +1,35 @@
+<%= form_with(model: @financial_record, local: true) do |form| %>
+  <div class="form-container">
+
+    <% if @financial_record.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@financial_record.errors.count, 'error') %> prohibited this financial record from being saved:</h2>
+
+        <ul>
+          <% @financial_record.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="form-field">
+      <%= form.label :amount %>
+      <%= form.text_field :amount %>
+    </div>
+
+    <div class="form-field">
+      <%= form.label :date %>
+      <%= form.date_field :date %>
+    </div>
+
+    <div class="form-actions">
+      <%= form.submit class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

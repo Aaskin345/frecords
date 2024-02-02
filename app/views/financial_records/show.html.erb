@@ -1,0 +1,23 @@
+<div class="financial-record-edit-container">
+<h1 class ="custom-login-page h2">Financial Record</h1>
+
+    <p>
+    <strong>Name:</strong>
+    <%= @financial_record.name %>
+    </p>
+
+    <p>
+    <strong>Amount:</strong>
+    <%= @financial_record.amount %>
+    </p>
+
+    <p>
+    <strong>Date:</strong>
+    <%= @financial_record.date %>
+    </p>
+
+    <div class="action-links">
+        <%= link_to 'Edit', edit_financial_record_path(@financial_record),class: 'btn btn-warning' %> |
+        <%= link_to 'Back', financial_records_path,class: 'btn btn-primary' %>
+    </div>
+</div>

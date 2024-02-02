@@ -1,0 +1,10 @@
+<div class="financial-record-edit-container">
+  <h1 class ="custom-login-page h2">Edit Financial Record</h1>
+
+  <%= render 'form' %>
+
+  <div class="action-links">
+    <%= link_to 'Show', @financial_record, class: 'btn btn-secondary' %> |
+    <%= link_to 'Back', financial_records_path, class: 'btn btn-primary' %>
+  </div>
+</div>

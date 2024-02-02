@@ -1,0 +1,223 @@
+/* app/assets/stylesheets/application.css (or .scss) */
+
+.custom-login-page {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-login-page h2 {
+  text-align: center;
+  color: #333;
+}
+
+.custom-login-page form {
+  margin-top: 20px;
+}
+
+.custom-login-page .field {
+  margin-bottom: 15px;
+}
+
+.custom-login-page label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.custom-login-page input[type='email'],
+.custom-login-page input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-login-page .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-login-page input[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-login-page input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.custom-login-page .alert {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 15px;
+}
+financial-records-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.financial-records-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.financial-records-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.financial-records-table th,
+.financial-records-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.financial-records-table th {
+  background-color: #f2f2f2;
+}
+
+.financial-records-table td {
+  background-color: #fff;
+}
+
+.financial-records-table a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.financial-records-table .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.financial-records-table .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.financial-records-table .btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.financial-records-table .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.financial-records-table a:hover {
+  text-decoration: underline;
+}
+
+.financial-record-edit-container {
+  max-width: 600px;
+  margin: 40px auto; /* Increased margin for more spacing */
+  padding: 30px; /* Increased padding for more spacing */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.financial-record-edit-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px; /* Increased margin for more spacing */
+}
+
+.action-links {
+  text-align: center;
+  margin-top: 30px; /* Increased margin for more spacing */
+}
+
+.action-links a {
+  text-decoration: none;
+  padding: 15px 30px; /* Increased padding for more spacing */
+  border-radius: 4px;
+}
+
+.action-links .btn-secondary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.action-links .btn-primary {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.action-links a:hover {
+  text-decoration: underline;
+}
+/* financial_records.css */
+
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-field input[type='text'],
+.form-field input[type='date'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-actions input[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-actions input[type='submit']:hover {
+  background-color: #45a049;
+}

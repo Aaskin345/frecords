@@ -1,0 +1,35 @@
+<% if user_signed_in? %>
+  <div class="user-welcome">
+    <p>Welcome, <%= current_user.email %>!</p>
+  </div>
+<% end %>
+
+<div class="financial-records-container">
+  <h1>Financial Records</h1>
+
+  <%= link_to 'New Financial Record', new_financial_record_path, class: 'btn btn-primary' %>
+
+  <table class="financial-records-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th colspan="3">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @financial_records.each do |financial_record| %>
+        <tr>
+          <td><%= financial_record.name %></td>
+          <td><%= financial_record.amount %></td>
+          <td><%= financial_record.date %></td>
+          <td><%= link_to 'Show', financial_record, class: 'btn btn-secondary' %></td>
+          <td><%= link_to 'Edit', edit_financial_record_path(financial_record), class: 'btn btn-warning' %></td>
+          <td><%= link_to 'Destroy', financial_record, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
